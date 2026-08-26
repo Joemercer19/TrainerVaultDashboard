@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">      
+<head> 
+    <meta 
+        name="viewport"
+        content= "width=device-width, initial-scale=1.0">
+    <meta  charset="UTF-8">
+    <title> Trainer Vault Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1> Trainer Vault </h1>
+
+        <p> manage your Pokemon card inventory</p>
+    </header>
+<main>
+
+    <section> 
+
+        <label for="search">Search inventory</label>
+
+
+        <input
+        id="search"
+        type="text"
+        placeholder="Search cards">
+        
+        <label for = "option">Status</label>
+        
+        <select id="option">
+        <option>ALL</option>
+        <option>In Stock</option>
+        <option>Listed</option>
+        <option>Sold</option>
+        </select>
+    </section>
+
+
+    <section>
+        <h2> inventory Summary </h2>
+        
+
+        <div>
+        <p> Total items</p>
+        <p> 3 </p>
+        </div>
+        <div>
+        <p>Stock Value</p>
+        <p>£595</p>
+        </div>
+        <div>
+        <p>potential revenue </p>
+        <p>£595</p>
+        </div>
+
+        
+
+    </section>
+
+    <section>
+        <h2> Cards </h2>
+        <article>
+            <h3>Charizard </h3>
+            <p>Rarity: SIR</p>
+            <p>Set: Phantasmal Flames</p>
+            <p>Market price: £550</p>
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+        
+
+            </article>
+
+            <article>
+            <h3>Gengar</h3>
+            <p>Rarity: VMax</p>
+            <p>Set: Evolving Skies</p>
+            <p>Market price: £30</p>
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+            </article>
+
+            <article>
+            <h3>Rayquaza</h3>
+            <p>Rarity: Amazing Rare</p>
+            <p>Set: Vivid Voltage</p>
+            <P>Market Price: £15</P>
+            <button class="edit-button">Edit</button>
+            <button class="delete-button">Delete</button>
+            </article>
+        
+            <button class="add-button">Add Card</button>
+    </section>
+</main>
+</body>
+</html>
