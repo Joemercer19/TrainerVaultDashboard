@@ -6,7 +6,7 @@ const cards = [
         rarity: "SIR",
         set: "Phantasmal Flames",
         purchasePrice: 0,
-        price: 550
+        salePrice: 550
     },
 
     {
@@ -14,7 +14,7 @@ const cards = [
         rarity: "VMax",
         set: "Evolving Skies",
         purchasePrice: 0,
-        price: 30
+        salePrice: 30
     },
 
     {
@@ -22,7 +22,7 @@ const cards = [
         rarity: "Amazing Rare",
         set: "Vivid Voltage",
         purchasePrice: 0,
-        price: 15
+        salePrice: 15
     }
 ];
 
@@ -39,7 +39,9 @@ cards.forEach((card) => {
     console.log(profit);
 
 });
-
+function calculateProfit(purchasePrice, salePrice) {
+    return salePrice - purchasePrice;
+}
 const totalProfit = cards.reduce((total, card) => {
 
     const profit = calculateProfit(
